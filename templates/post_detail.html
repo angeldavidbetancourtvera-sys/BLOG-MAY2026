@@ -6,4 +6,5 @@
     <p><strong>created at:</strong> {{ blog.created_at }}</p>
     <p><strong>updated at:</strong> {{ blog.updated_at }}</p>
     <p>{{ blog.content }}</p>
+    <a href="{% url 'post-update' blog.pk %}">Editar publicacion</a>
 {% endblock content %}
